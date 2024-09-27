@@ -13,6 +13,7 @@ body {
     text-align: center;
     color: white;
     font-weight: 200;
+	margin-top: 40px;
 }
 
 .topofpage {
@@ -32,6 +33,10 @@ body {
     flex-grow: 1;
     font-weight: 400;
     text-transform: uppercase;
+	max-width: 100%;
+	max-width: auto;
+	margin-left: 20px;
+	
 }
 
 .logo {
