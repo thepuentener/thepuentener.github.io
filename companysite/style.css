@@ -10,8 +10,6 @@ body {
 }
 
 .content {
-    margin-top: 50px;
-    padding-left: 20px;
     text-align: center;
     color: white;
     font-weight: 200;
@@ -79,10 +77,6 @@ a:active {
     .navbar a {
         font-size: 12px; 
         margin-right: 15px;
-    }
-
-    .topofpage {
-        flex-direction: column; 
     }
 
     .search {
