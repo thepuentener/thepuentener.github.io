@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Template</title>
+    <link rel="stylesheet" type="text/css" href="../basic-template/style.css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <div class="topofpage">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo" class="imglogo"/>
+        </div>
+
+        <div class="navbar" id="navbar">
+            <a href="index.html">Home</a>
+            <a href="morning_ritual.html">Morning Ritual</a>
+            <a href="night_care.html">Night Care</a>
+            <a href="seasonal_transition.html">Seasonal Transition</a>
+            <a href="products.html">Products</a>
+        </div>
+
+        <div class="search">
+            <a href="search.html">
+                <img src="img/search.png" alt="search function" class="search_icon"/>
+            </a>
+        </div>
+        
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <div class="close" onclick="toggleMenu()">X</div>
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="morning_ritual.html">Morning Ritual</a>
+            <a href="night_care.html">Night Care</a>
+            <a href="seasonal_transition.html">Seasonal Transition</a>
+            <a href="products.html">Products</a>
+        </div>
+    </div>
+
+    <div class="outer">
+        <div class="tile tile1"></div>
+        <div class="page"><div class="content">Hydration</div></div>
+    </div>
+
+    <div class="outer">
+        <div class="tile tile2"> 
+            <div class="page">
+                <div class="content">Which Ingredients Does your skin need?</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="outer">
+        <div class="tile tile3"></div>
+        <div class="page">
+            <div class="content">Relaxation</div> 
+        </div>
+    </div>
+
+    <div class="outer">
+        <div class="tile tile4"></div>
+        <div class="page"> 
+            <div class="content">Sun Protection</div>
+        </div>
+    </div>
+
+    <div class="outer">
+        <div class="tile tile5"></div>
+        <div class="page">
+            <div class="content">Mature Skin</div>
+        </div>
+    </div>
+
+    <div class="outer">
+        <div class="tile tile6"></div>
+        <div class="page">
+            <div class="content">Gua Shua</div>
+        </div>
+    </div>
+    
+    <script>
+        function toggleMenu() {
+            const overlay = document.getElementById("overlay");
+            const navbar = document.getElementById("navbar");
+            overlay.classList.toggle("active");
+            navbar.classList.toggle("hidden");
+        }
+    </script>
+</body>
+</html>

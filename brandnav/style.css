@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    background-color: #040a2b;
+}
+
+.outer {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.tile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%; 
+    z-index: 1; 
+}
+
+.tile1 {background-image: url("img/1.png")}
+.tile2 {background-image: url("img/2.png")}
+.tile3 {background-image: url("img/3.png")}
+.tile4 {background-image: url("img/4.png")}
+.tile5 {background-image: url("img/5.png")}
+.tile6 {background-image: url("img/6.png")}
+
+.page {
+    position: absolute;
+    top: 0;
+    left: 50%; 
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 800px; 
+    height: 100%;
+    background-color: #ebebef;
+    opacity: 0.7;
+    z-index: 2; 
+    color: #040a2b;
+}
+
+.content {
+    font-weight: 300;
+    display: flex;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 20px; 
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+
+.topofpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px;
+    background-color: #627aa2;
+    height: 70px;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex; 
+    justify-content: center; 
+    flex-grow: 1;
+    font-weight: 400;
+    text-transform: uppercase;
+    max-width: 100%;
+    margin-left: 20px;
+}
+
+.logo {
+    max-width: 1000px;
+    padding-left: 5px;
+}
+
+.imglogo {
+    max-width: 40%;
+}
+
+.search {
+    margin-left: auto;
+    text-align: right;
+}
+
+.search_icon {
+    max-width: 15%;
+}
+
+a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 20px;
+    text-transform: uppercase; /* Capitalize the letters in the links */
+}
+
+a:hover {
+    color: #ebebef;
+}
+
+a:active {
+    color: #040a2b;
+}
+
+a:last-child {
+    margin-right: 0; /* Remove margin for the last link */
+}
+
+.hamburger {
+    display: none; /* Hide hamburger by default */
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase; /* Capitalize the hamburger menu */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.overlay.active {
+    display: flex;
+}
+
+.overlay-content a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    display: block;
+    margin: 20px 0;
+}
+
+.close {
+    color: white;
+    font-size: 32px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none; /* Hide the navbar */
+}
+
+@media (max-width: 828px) {
+    .navbar {
+        display: none; /* Hide the navbar at the breakpoint */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger in mobile view */
+    }
+}
