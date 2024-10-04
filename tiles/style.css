@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    background-color: #040a2b;
+}
+
+.outer {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.tile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%; 
+    z-index: 1; 
+}
+
+.tile1 {background-image: url("img/1.png")}
+.tile2 {background-image: url("img/2.png")}
+.tile3 {background-image: url("img/3.png")}
+.tile4 {background-image: url("img/4.png")}
+.tile5 {background-image: url("img/5.png")}
+.tile6 {background-image: url("img/6.png")}
+
+.page {
+    position: absolute;
+    top: 0;
+    left: 50%; 
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 800px; 
+    height: 100%;
+    background-color: #ebebef;
+	opacity: 0.7;
+    z-index: 2; 
+    color: #040a2b;
+}
+
+.content{
+	font-weight: 300;
+    display: flex;
+    font-weight:bold;
+    text-align: left;
+    padding-top: 20px; 
+	padding-left: 20px;
+	text-transform: uppercase;
+}
+
+.topofpage {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px;
+    background-color:#627aa2;
+    height: 70px;
+	}
+
+.navbar {
+    display: flex; 
+    justify-content: center; 
+    flex-grow: 1;
+    font-weight: 400;
+    text-transform: uppercase;
+	max-width: 100%;
+	max-width: auto;
+	margin-left: 20px;}
+
+.logo {
+	max-width: 1000px;
+    padding-left: 5px;
+}
+
+.imglogo {
+    max-width: 40%;
+}
+
+.search {
+    position:right;
+	margin-left: auto;
+    text-align: right;
+}
+
+.search_icon {
+    max-width: 15%;
+}
+
+a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+a:hover {
+    color: #ebebef;
+}
+
+a:active {
+    color: #040a2b;
+}
+
+a:last-child {
+    margin-right: 0; /* Remove margin for the last link */
+}
+
+@media (max-width: 828px) {
+    .navbar a {
+        font-size: 12px;
+        margin-right: 15px;
+    }
+
+    .search {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
