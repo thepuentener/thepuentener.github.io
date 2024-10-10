@@ -40,6 +40,11 @@
     background: rgba(176,248,225,1.00);
   }
 
+.col-2and5{
+	width:20.835%;
+	 background: rgba(176,248,225,1.00);
+	display: flex; 
+}
   .col-3 {
     width: 25%;
     background: rgba(131,244,208,1.00);   
