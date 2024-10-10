@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+
+/* ==== GRID SYSTEM ==== */
+
+.parent-container {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+  width: 100%;
+	max-width: 960px;
+  color: rgba(0,16,11,1.00);
+
+}
+
+.row {
+  position: relative;
+  width: 100%;
+  
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0% 0%;
+  min-height: 0.125rem;
+}
+
+
+.col-1 {
+    width: 8.33%;
+    background: rgba(220,252,242,1.00)
+  }
+
+  .col-2 {
+    width: 16.66%;
+    background: rgba(176,248,225,1.00);
+  }
+
+  .col-3 {
+    width: 25%;
+    background: rgba(131,244,208,1.00);   
+  }
+
+  .col-4 {
+    width: 33.33%;
+    background: rgba(86,240,191,1.00);
+  }
+
+  .col-5 {
+    width: 41.67%;
+    background: rgba(41,236,174,1.00);
+  }
+
+  .col-6 {
+    width: 50%;
+    background: rgba(18,209,149,1.00);
+  }
+  
+
+  .col-7 {
+    width: 58.33%;
+    background: rgba(14,165,117,1.00);
+  }
+
+  .col-8 {
+    width: 66.67%;
+    background: rgba(10,120,85,1.00);
+  }
+
+  .col-9 {
+    width: 75%;
+    background: rgba(6,75,53,1.00);
+	color: white;
+  }
+
+  .col-10 {
+    width: 83.33%;
+    background: rgba(4,60,42,1.00);
+	color: white;
+  }
+
+  .col-11 {
+    width: 91.67%;
+    background: rgba(3,45,32,1.00);
+	color: white;
+  }
+
+  .col-12 {
+    width: 100%;
+    background: rgba(2,30,21,1.00);
+	color: white;
+  }
+
+/* This is clearfix, clearing content after each row*/
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+div [class^="col"] {
+    height:100px;
+    border: 1px solid white;
+   
+}
