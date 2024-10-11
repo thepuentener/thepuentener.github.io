@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+
+/* ==== Images ==== */
+.logo {
+max-width: 200px;
+padding-left: 10px;
+}
+
+/* ==== GRID SYSTEM ==== */
+
+.container {
+  width: 96%;
+  margin:auto;
+  color:white;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+
+  
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0% 0%;
+  height: auto;
+
+
+}
+
+
+.col-1 {
+    width: 8.33%;
+	display: flex;
+	flex-direction: column; /* Make sure it stacks vertically */
+    justify-content: flex-start;}
+
+  .col-2 {
+    width: 16.66%;
+    background: rgba(102,51,153,.2);
+	display: flex;
+  }
+
+
+  .col-3 {
+    width: 25%;
+	display: flex;
+  }
+
+  .col-4 {
+    width: 33.33%;
+	display: flex;
+	top: 0;
+  }
+
+  .col-5 {
+    width: 41.67%;
+	display: flex;
+    flex-direction: column; /* Make sure it stacks vertically */
+    justify-content: flex-start;
+  }
+
+  .col-6 {
+    width: 50%;
+	display: flex;
+  }
+  
+
+  .col-7 {
+    width: 58.33%;
+	  display: flex;
+    flex-direction: column; /* Make sure it stacks vertically */
+    justify-content: flex-start;}
+
+  .col-8 {
+    width: 66.66%;
+    background: rgba(102,51,153,.64);
+  display: flex;}
+
+  .col-9 {
+    width: 75%;
+	display: flex;
+	flex-direction: row;
+	justify-content:flex-start;}
+
+  .col-10 {
+    width: 83.33%;
+    background: rgba(102,51,153,.82);
+  display: flex;}
+
+  .col-11 {
+    width: 91.67%;
+    background: rgba(102,51,153,.89);
+   display: flex;
+    flex-direction: column; /* Make sure it stacks vertically */
+	  justify-content: flex-start;}
+
+  .col-12 {
+    width: 100%;
+    background: rgba(102,51,153,1);
+  display: flex;}
+
+/* This is clearfix, clearing content after each row*/
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+div [class^="col"] {
+    height:100px;
+    border: 1px solid white;
+   
+}
