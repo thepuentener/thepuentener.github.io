@@ -29,7 +29,6 @@ padding-left: 10px;
   margin: 0% 0%;
   height: auto;
 
-
 }
 
 
@@ -100,8 +99,7 @@ padding-left: 10px;
 	  justify-content: flex-start;}
 
   .col-12 {
-    width: 100%;
-    background: rgba(102,51,153,1);
+   width: 100%;
   display: flex;}
 
 /* This is clearfix, clearing content after each row*/

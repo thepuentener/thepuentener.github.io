@@ -90,15 +90,43 @@ padding-left: 5px;}
     justify-content: flex-start; /* Align content at the top */
 	padding-top: 15px;
 	padding-bottom: 15px;
-
 }
 
 .sidebar img{
 	width: 33%; /* Image takes 33% of the width */
     margin-left: auto; /* Push the image to the right */
     max-width: 100%; /* Ensure it doesn’t overflow */
-	padding-left: 2px;
-	
+	padding: 5px;
+}
+
+.sidebar_text {
+    width: 65%; /* Text takes the remaining width */
+}
+
+
+/* LONG BAR*/
+
+.longbar {
+    width: 100%;
+	max-height: auto; /* Limit height */
+	color: black;
+    display: flex;
+	justify-content: space-between; /* Distribute space between text and image */
+	overflow: hidden;
+	text-align: left;
+	font-weight:200;
+	font-family: "Raleway";
+	font-size: 1vw;
+	flex-direction: row; /* Ensure the content aligns correctly */
+	padding-top: 15px;
+	padding-bottom: 15px;
+
+}
+
+.longbar img{
+	width: 25%; /* Image takes 33% of the width */
+    max-width: 100%; /* Ensure it doesn’t overflow */
+	padding: 5px;
 }
 
 .sidebar_text {
