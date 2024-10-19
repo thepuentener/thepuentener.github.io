@@ -82,7 +82,7 @@ padding-left: 5px;}
 	text-align: left;
 	font-weight:200;
 	font-family: "Raleway";
-	font-size: 1vw;
+	font-size: 1.1vw;
 	background-color: white;
 	padding-left: 5px;
 	overflow: hidden}
@@ -99,7 +99,7 @@ padding-left: 5px;}
 	text-align: left;
 	font-weight:200;
 	font-family: "Raleway";
-	font-size: 1vw;
+	font-size: 1.1vw;
 	flex-direction: row; /* Ensure the content aligns correctly */
 	padding-top: 15px;
 	padding-bottom: 15px;
