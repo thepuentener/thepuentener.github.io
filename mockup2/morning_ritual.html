@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Mock up 2</title>
+  <meta name="description" content="Basic Grid">
+  <meta name="keywords" content="html, css,floats, float left, float right, clearfix, simple grid">  
+  <meta name="author" content="Intro to Web"> 
+    
+  <!-- THIS IS A LINK TO THE EXTERNAL .CSS --> 
+  <link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/layout.css">
+    
+</head>
+    
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	
+<body>
+	
+
+
+    <div class= "container">
+        
+        <!-- Full row, spanning 12 columns of a 12 column grid --> 
+        
+		<div class="col-12" >
+		<div class="row topofpage">
+          <img src="img/logo.png" class="logo" alt="logo"/> 
+			
+
+        <div class="navbar" id="navbar">
+            <a href="index.html">Home</a>
+            <a href="morning_ritual.html">Morning Ritual</a>
+            <a href="night_care.html">Night Care</a>
+            <a href="seasonal_transition.html">Seasonal Transition</a>
+            <a href="products.html">Products</a>
+			
+        </div>
+        
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+				
+				
+            <div class="col-1"  >
+                 <div><img src="img/logo3.png" class="icon-container" alt="logo"/> </div>
+          </div>
+		
+		
+            <div class="col-1"  >
+                <div> <img src="img/logo1.png" class="icon-container" alt="logo"/> </div>
+          </div>
+	
+            <div class="col-1">
+                <div> <img src="img/logo2.png" class="icon-container" alt="logo"/> </div>
+			</div>
+	
+	</div>
+    </div>
+
+ <div class="overlay" id="overlay">
+        <div class="close" onclick="toggleMenu()">X</div>
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="morning_ritual.html">Morning Ritual</a>
+            <a href="night_care.html">Night Care</a>
+            <a href="seasonal_transition.html">Seasonal Transition</a>
+            <a href="products.html">Products</a>
+        </div>
+    </div>
+			
+		
+		<div class="outer">
+<div class="page">
+	
+         <!-- another row --> 
+        <div class="row">
+            <div class="col-12">
+				
+		         <div class="longbar"> 
+			<img src="img/4.png" alt="tools"/>
+			<div class="longbar_content">
+            <h1 class="longbar_title">Morning Ritual</h1>
+            <p class="longbar_text">
+ 
+A skincare morning ritual sets the tone for a healthy complexion throughout the day. Start by cleansing your face with a gentle cleanser to remove any impurities accumulated overnight. Follow this with a toner to balance your skin's pH and prepare it for subsequent products. Next, apply a vitamin C serum to brighten your complexion and protect against environmental stressors. Moisturizing is crucial, so choose a lightweight moisturizer that hydrates without clogging pores. Finally, don’t forget sunscreen; applying a broad-spectrum SPF is essential to shield your skin from harmful UV rays. This simple yet effective routine leaves your skin feeling refreshed, nourished, and ready to face the day ahead.
+				  </p>
+        </div>
+     </div></div>
+     </div>
+				
+ <div class="row">
+            <div class="col-4">
+				
+		    			<div class="highlight">
+					  <h1 class="highlight_title">cleanse</h1>
+					 <div class="hhighlight_text">
+      
+        <p class="highlight_subtitle">Start with a gentle cleanser to remove impurities and excess oils from your skin, ensuring a fresh canvas for the day.
+						  </p>
+    </div>
+    <img src="img/9.png" alt="Image" class="highlight_image" />
+   
+</div>  </div>
+	 
+	  <div class="col-4">
+				
+		    			<div class="highlight">
+					  <h1 class="highlight_title">Moisturize</h1>
+					 <div class="hhighlight_text">
+      
+        <p class="highlight_subtitle">Apply a lightweight moisturizer to hydrate your skin, keeping it plump and smooth throughout the day.</p>
+    </div>
+    <img src="img/7.png" alt="Image" class="highlight_image" />
+   
+</div>  </div>
+	 
+	  <div class="col-4">
+				
+		    			<div class="highlight">
+					  <h1 class="highlight_title">protect</h1>
+					 <div class="hhighlight_text">
+      
+        <p class="highlight_subtitle">Finish with a broad-spectrum sunscreen to shield your skin from harmful UV rays and prevent premature aging..</p>
+    </div>
+    <img src="img/8.png" alt="Image" class="highlight_image" />
+   
+</div>  </div>
+     </div>				
+           
+	
+<script>
+        function toggleMenu() {
+            const overlay = document.getElementById("overlay");
+            const navbar = document.getElementById("navbar");
+            overlay.classList.toggle("active");
+            navbar.classList.toggle("hidden");
+        }
+    </script>
+	
+	</div>
+</div>
+     </div> </body>
+
+</html>
+ 

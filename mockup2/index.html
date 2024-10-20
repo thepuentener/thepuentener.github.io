@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Mock up 2</title>
+  <meta name="description" content="Basic Grid">
+  <meta name="keywords" content="html, css,floats, float left, float right, clearfix, simple grid">  
+  <meta name="author" content="Intro to Web"> 
+    
+  <!-- THIS IS A LINK TO THE EXTERNAL .CSS --> 
+  <link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/layout.css">
+    
+</head>
+    
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	
+<body>
+	
+
+
+    <div class= "container">
+        
+        <!-- Full row, spanning 12 columns of a 12 column grid --> 
+        
+		<div class="col-12" >
+		<div class="row topofpage">
+          <img src="img/logo.png" class="logo" alt="logo"/> 
+			
+
+        <div class="navbar" id="navbar">
+            <a href="index.html">Home</a>
+            <a href="morning_ritual.html">Morning Ritual</a>
+            <a href="night_care.html">Night Care</a>
+            <a href="seasonal_transition.html">Seasonal Transition</a>
+            <a href="products.html">Products</a>
+			
+        </div>
+        
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+				
+				
+            <div class="col-1"  >
+                 <div><img src="img/logo3.png" class="icon-container" alt="logo"/> </div>
+          </div>
+		
+		
+            <div class="col-1"  >
+                <div> <img src="img/logo1.png" class="icon-container" alt="logo"/> </div>
+          </div>
+	
+            <div class="col-1">
+                <div> <img src="img/logo2.png" class="icon-container" alt="logo"/> </div>
+			</div>
+	
+	</div>
+    </div>
+
+ <div class="overlay" id="overlay">
+        <div class="close" onclick="toggleMenu()">X</div>
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="morning_ritual.html">Morning Ritual</a>
+            <a href="night_care.html">Night Care</a>
+            <a href="seasonal_transition.html">Seasonal Transition</a>
+            <a href="products.html">Products</a>
+        </div>
+    </div>
+			
+		
+		<div class="outer">
+<div class="page">
+	
+         <!-- another row --> 
+        <div class="row">
+            <div class="col-12">
+				
+				<div class="hero">
+					  <h1 class="hero_title">Discover the power of Skincare</h1>
+					 <div class="hero_text">
+      
+        <p class="hero_subtitle">Skincare is an essential part of maintaining healthy, radiant skin and can help address various concerns such as dryness, acne, or signs of aging. A consistent routine tailored to your skin type promotes hydration, protects against environmental damage, and supports natural renewal processes. Incorporating products with nourishing ingredients like antioxidants, hyaluronic acid, and gentle exfoliants can improve texture and tone while keeping the skin balanced.</p>
+    </div>
+    <img src="img/1.png" alt="Hero Image" class="hero_image" />
+   
+</div>
+				
+				
+            </div>
+        </div>
+		
+	
+		
+		<!-- another row --> 
+	<!-- another row --> 
+        <div class="row">
+			<div class="col-6"> 
+    <div class="longbar"> 
+        <img src="img/2.png" alt="thing"/>
+        <div class="longbar_content">
+            <h1 class="longbar_title">Cleansing</h1>
+            <p class="longbar_text">
+                Skincare is essential for maintaining healthy skin and preventing various skin issues. A good skincare routine typically involves several key steps. First, cleansing is crucial as it removes dirt, oil, makeup, and impurities from the skin. It’s recommended to cleanse your skin twice daily—once in the morning and once at night—using a cleanser suited to your skin type, whether it's gel, cream, or foam.
+            </p>
+        </div>
+    </div>
+</div>
+
+			
+			<div class="col-6"> 
+			<div class="longbar"> 
+			<img src="img/3.png" alt="thing"/>
+				
+<div class="longbar_content">
+            <h1 class="longbar_title">Oils and Soaps</h1>
+            <p class="longbar_text">
+
+Avoid harsh soaps that can strip the skin of its natural oils.
+After cleansing, the next step is toning, which helps balance the skin's pH and prepares it for subsequent products. Look for toners with hydrating or exfoliating properties, such as rose water or witch hazel, and apply them with a cotton pad or by gently patting them onto your skin.
+	  </p>
+        </div>
+     </div></div>
+		
+		<!-- another row --> 
+        <div class="row">
+            <div class="col-12">
+             <div class="longbar"> 
+			<img src="img/6.png" alt="tools"/>
+			<div class="longbar_content">
+            <h1 class="longbar_title">Gua shua</h1>
+            <p class="longbar_text">
+ 
+Gua Sha is a traditional Chinese healing technique that involves scraping the skin with a smooth-edged tool, typically made from materials like jade, rose quartz, or buffalo horn. The practice aims to stimulate circulation, promote lymphatic drainage, and relieve muscle tension, thereby enhancing overall skin health and radiance. Often used on the face, Gua Sha can help reduce puffiness, improve elasticity, and promote a more youthful appearance. In addition to its aesthetic benefits, Gua Sha is also employed in bodywork to alleviate soreness and tension in various muscle groups. As it gains popularity in the Western wellness community, many appreciate its holistic approach to self-care and natural beauty.
+				  </p>
+        </div>
+	
+     </div>
+     </div>
+     </div>
+	</div>
+    </div>
+	</div>
+
+
+<script>
+        function toggleMenu() {
+            const overlay = document.getElementById("overlay");
+            const navbar = document.getElementById("navbar");
+            overlay.classList.toggle("active");
+            navbar.classList.toggle("hidden");
+        }
+    </script>
+	
+</body>
+
+</html>
+ 

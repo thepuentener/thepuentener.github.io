@@ -1,0 +1,347 @@
+body{
+  font-family: "Raleway", sans-serif;
+  color:black;
+	padding-top: 0px; /* Match this to the height of your .topofpage */
+}
+
+.outer{
+  text-align: center;
+}
+
+.page{
+  max-width: 1200px;
+  width: 100%;
+  display: inline-block;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+	flex-wrap: nowrap;
+    padding: 10px;
+    background-color: #627aa2;
+    height: 50px;
+	font-size-adjust: auto;
+}
+
+.topofpage{
+  background-color:#627aa2;
+	position: fixed;
+	top: 0;
+	display: flex;
+    text-transform: uppercase;
+    max-width: 100%;
+	height: 70px;
+	z-index: 10;
+	font-size: 1vw;
+	flex-direction: row; /* Ensure the content aligns correctly */
+	flex-wrap: nowrap;
+    justify-content: space-between;
+	align-items: center;
+    flex-grow: .5;
+    font-weight: 400;
+    padding: 10px;
+  
+}
+
+/* LOGOS */
+.icon-container {
+    object-fit: contain;
+    padding: 15px;
+    width: 100%; /* Full width, let the parent container handle size */
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Center the icons vertically */
+}
+
+/* Responsive images inside icon container */
+.icon-container img {
+    max-width: 100%; /* Icons will not exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+    width: 15%; /* Set a reasonable base size */
+}
+
+/* Larger desktop screens */
+@media (min-width: 1024px) {
+    .icon-container img {
+        width: 5%; /* Reduce icon size for large desktops */
+		padding: 150px;
+    }
+}
+
+/* Tablet devices */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .icon-container img {
+        width: 8%; /* Moderate size for tablets */
+		padding: 100px;
+    }
+}
+
+/* Mobile devices - hide icons after 768px screen size */
+@media (max-width: 768px) {
+    .icon-container {
+        display: none; /* Hide the entire container */
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .icon-container {
+        display: none; /* Ensure it's hidden for small screens */
+    }
+}
+
+/* ==== Images ==== */
+.logo {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+flex-wrap: nowrap;
+max-width: 15%;
+padding-left: 10px;
+}
+
+
+/* HERO SECTION */
+.hero {
+    position: relative; /* Position relative for absolute positioning of text */
+    max-height: 40%; /* Limit height to viewport */
+    width: 100%;
+    overflow: hidden; /* Prevent overflow */
+    display: flex; /* Enable flexbox for vertical alignment */
+    flex-direction: column; /* Align content vertically */
+    justify-content: center;
+    text-align: center; /* Center text horizontally */
+}
+
+/* HERO IMAGE */
+.hero_image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Cover the container */
+	padding: 5px;
+}
+
+/* HERO TEXT */
+.hero_text {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px; /* Add padding for spacing */
+	align-content: center;
+}
+
+/* PAGE TITLE */
+.hero_title {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    font-size: 2vw; /* Responsive font size */
+    margin: 0; /* Remove default margins */
+}
+
+/* CONTINUOUS TEXT */
+.hero_subtitle {
+    color: black;
+    font-weight: 200;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.1vw; /* Responsive font size */
+    margin: 0; /* Remove default margins */
+	min-height: 70px;
+}
+
+/*highlight*/
+
+.highlight{
+    position: relative; /* Position relative for absolute positioning of text */
+    max-height: 40%; /* Limit height to viewport */
+    width: 100%;
+    overflow: hidden; /* Prevent overflow */
+    display: flex; /* Enable flexbox for vertical alignment */
+    flex-direction: column; /* Align content vertically */
+    justify-content: center;
+	text-align: center; /* Center text horizontally */}
+	
+.highlight_image {
+    width: 100%;
+    min-height: 35%; /* Maintain aspect ratio */
+    object-fit: contain; /* Cover the container */
+	padding: 5px;
+}
+
+/* HERO TEXT */
+.highlight_text {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px; /* Add padding for spacing */
+	align-content: center;
+	min-height: 75%;
+	font-size: 1vw;
+	
+}
+
+/* PAGE TITLE */
+.highlight_title {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5vw; /* Responsive font size */
+    margin: 0; /* Remove default margins */
+}
+
+/* CONTINUOUS TEXT */
+.highlight_subtitle {
+    color: black;
+    font-weight: 200;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.1vw; /* Responsive font size */
+    margin: 0; /* Remove default margins */
+	min-height: 70px;
+}
+/* LONG BAR*/
+
+.longbar {
+    width: 100%;
+    max-height: auto; /* Limit height */
+    color: black;
+    display: flex;
+    justify-content: flex-start; /* Align items to the start (left) */
+    overflow: hidden;
+    text-align: left;
+    font-weight: 200;
+    font-family: "Raleway";
+    font-size: 2vw;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.longbar img {
+    width: 50%; /* Image takes 25% of the width */
+    max-width: 100%; /* Ensure it doesn’t overflow */
+    padding: 5px;
+	object-fit: contain;
+}
+
+.longbar_content {
+    display: flex;
+    flex-direction: column; /* Stack title and text vertically */
+    justify-content: center; /* Center align title and text vertically */
+    margin-left: 15px; /* Space between image and text */
+}
+
+.longbar_title {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5vw; /* Responsive font size */
+    margin: 0; /* Remove default margins */
+}
+
+.longbar_text {
+    color: black;
+    font-weight: 200;
+    font-family: "Raleway", sans-serif;
+    font-size: 1vw; /* Responsive font size */
+    margin: 0; /* Remove default margins */
+}
+
+/* [class^="side_bar"] element that starts with */
+div [class^="side_bar"]:first-of-type {
+    margin: 0px;
+   
+}
+
+div [class^="side_bar"]:last-of-type {
+    margin: 0px;
+   
+}
+
+
+a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 20px;
+    text-transform: uppercase; /* Capitalize the letters in the links */
+}
+
+a:hover {
+    color: #ebebef;
+}
+
+a:active {
+    color: #040a2b;
+}
+
+a:last-child {
+    margin-right: 0; /* Remove margin for the last link */
+}
+
+.hamburger {
+    display: none; /* Hide hamburger by default */
+	font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase; /* Capitalize the hamburger menu */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.overlay.active {
+    display: flex;
+}
+
+.overlay-content a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    display: block;
+    margin: 20px 0;
+}
+
+.close {
+    color: white;
+    font-size: 32px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: none; /* Hide the navbar when screen is smaller than 768px */
+  }
+  
+  .hamburger {
+    display: block; /* Show hamburger on smaller screens */
+  }
+  
+  .overlay {
+    display: none; /* Default hidden, will be activated on click */
+  }
+
+  /* Ensure the hamburger appears before the navbar disappears */
+  .hamburger {
+    position: absolute;
+    top: 20px; /* Position it near the top */
+    right: 20px; /* Position it on the right */
+    z-index: 20; /* Make sure it's above other elements */
+    cursor: pointer; /* Show it's clickable */
+  }
+}
+
