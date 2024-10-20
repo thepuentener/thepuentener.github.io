@@ -1,0 +1,140 @@
+body{
+  font-family: sans-serif;
+  color:black;
+}
+
+.outer{
+  text-align: center;
+}
+
+.page{
+  max-width: 1200px;
+  width: 100%;
+  display: inline-block;
+}
+
+.navbar{
+  background-color:#627aa2;
+	display: flex;
+	position: sticky;
+    top: 0;
+    text-transform: uppercase;
+    max-width: 100%;
+	height: auto;
+	z-index: 10;
+}
+
+/* LOGOS */
+.icon-container{
+	max-width: 60%;
+    object-fit: contain;
+	padding: 5px;
+    width: 100%;
+}
+
+.icon-container img{
+    align-items: center; /* Center items vertically */
+}
+
+/* ==== Images ==== */
+.logo {
+max-width: 200px;
+padding-left: 10px;
+}
+
+
+/* HERO IMAGE */
+.hero_content {
+	max-height: 100%; /* Limit height */
+	width: 100%;
+    display: block; /* Remove extra spaces under image */
+    object-fit: contain; /* Crop the image to fit container */
+	flex-direction: column; /* Ensure the content aligns correctly */
+    justify-content:flex-end;
+	overflow: hidden;
+	text-align: center;
+	padding: 5px;
+}
+
+.hero_content:hover {
+	padding: 5px;
+	background-color: black;
+	transform: scale(0.9);
+} 
+
+/* PAGE TITLE */
+.hero_title_text {
+    width: 100%;
+	max-height: auto; /* Limit height */
+	color: black;
+    display: block; /* Remove extra spaces under image */
+	overflow: hidden;
+	text-align: left;
+	text-transform: uppercase;
+	font-weight:400;
+	font-family: "Raleway";
+	font-size: 2vw;
+	background-color: white;
+padding-bottom: 5%;
+padding-left: 5px;}
+
+.hero_title_text:hover{
+	color: gray;
+}
+
+/* CONTINOUS TEXT*/
+.hero_sub_text {
+    width: 100%;
+	max-height: auto; /* Limit height */
+	color: black;
+    display: block; /* Remove extra spaces under image */
+	overflow: hidden;
+	text-align: left;
+	font-weight:200;
+	font-family: "Raleway";
+	font-size: 1.1vw;
+	background-color: white;
+	padding-left: 5px;
+	overflow: hidden}
+
+/* LONG BAR*/
+
+.longbar {
+    width: 100%;
+	max-height: auto; /* Limit height */
+	color: black;
+    display: flex;
+	justify-content: space-between; /* Distribute space between text and image */
+	overflow: hidden;
+	text-align: left;
+	font-weight:200;
+	font-family: "Raleway";
+	font-size: 1.1vw;
+	flex-direction: row; /* Ensure the content aligns correctly */
+	padding-top: 15px;
+	padding-bottom: 15px;
+	overflow: hidden;
+}
+
+.longbar img{
+	width: 25%; /* Image takes 33% of the width */
+    max-width: 100%; /* Ensure it doesn’t overflow */
+	padding: 5px;
+}
+
+.longbar:hover {
+	padding: 5px;
+	background-color: #060c0f;
+	color:white;
+	transform: scale(0.9);
+	
+/* [class^="side_bar"] element that starts with */
+div [class^="side_bar"]:first-of-type {
+    margin: 0px;
+   
+}
+
+div [class^="side_bar"]:last-of-type {
+    margin: 0px;
+   
+}
