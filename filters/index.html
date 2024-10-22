@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Filters</title>
+
+	<style>
+     .my_filter{
+      -webkit-filter:sepia(0);
+	filter: sepia(0);
+     }
+
+    .my_filter:hover{
+
+      animation: 5s myfilteranimation forwards;
+
+    }
+
+
+
+
+     @keyframes myfilteranimation{
+		 
+		 33%{ 
+			 -webkit-filter:sepia(0.3);
+			 filter: sepia(0.3);
+	       }
+		 66%{
+	        -webkit-filter:sepia(0.6);
+			 filter: sepia(0.6);
+	       }
+		 100%{
+	        -webkit-filter:sepia(1);
+			 filter: sepia(1);
+	       }
+
+     }
+
+
+
+
+	</style>
+</head>
+<body>
+
+<img class="my_filter" src="img/tiramisu.jpg" alt="tiramisu">
+
+</body>
+</html>
